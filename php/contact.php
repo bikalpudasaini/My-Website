@@ -52,8 +52,8 @@ $Headers .= 'Content-Transfer-Encoding: base64' . "\r\n";
 $Headers .= "From:".$email . "\r\n";
 
 // Send email
-$success = mail($EmailTo, '=?UTF-8?B?' . base64_encode($Subject) . '?=' , base64_encode($Body), $Headers);
-
+$success = mail($EmailTo, 'bikal.pudasaini@wsu.edu' . base64_encode($Subject) . '?=' , base64_encode($Body), $Headers);
+//'=?UTF-8?B?'
 // Redirect to success page
 if ($success && $errors == ""){
    echo 'success';
